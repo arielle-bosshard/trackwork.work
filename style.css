@@ -1,0 +1,160 @@
+body {
+  background-size: cover;
+  opacity: 100%;
+  font-family: Helvetica Neue;
+  font-size: 1vw; 
+}
+
+.container {
+  width: 100%; 
+}
+
+.wrapper {
+  max-width:100%;
+}
+
+#tracknames {    
+  font-size: 0.7vw;
+  margin-top: 11%;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: grey;
+}
+
+/* selected link */
+a:active {
+  color: grey;
+}
+
+[class*="col-"] {
+  float: left;   
+  overflow: hidden;
+}
+
+.col-1 {width: 32.5%;}
+.col-2 {width: 40%;}
+.col-3 {width: 37%;}
+.col-4 {width: 25%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 49%;}
+.col-7 {width: 49%;}
+.col-8 {width: 49%;}
+.col-9 {width: 61%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 99%;}
+.col-13 {width: 6%;}
+
+.row::after {
+  clear: ""; /* BOTH sides of the element will be CLEAR - nothing can appear there*/
+  display: table;/*makes the elements appear as a grid - ie the squares in a horizontal row will remain the same height*/
+  position: absolute;      
+}
+
+.gallery__img {   
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  object-fit: cover;
+}
+
+span {
+    display: block;
+  /*text-shadow: 0.5px 0.5px #000000;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  z-index: 24;*/  
+}
+
+p {
+  display: inline;
+  position: absolute;
+  z-index: 2;
+  font-size: 1vw;
+  font-size: 1.5vh;
+  color: black;
+  margin: 1%;
+}
+
+.headings {
+  display: block;
+  position: absolute;
+  font-size: 1vw;
+  color: black;
+  margin: 1%;
+}
+
+div {
+  margin: 1px;
+}
+
+
+#logo {
+  max-width: 65%;  
+  z-index: 2; 
+}
+
+.half-width, .thirds {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.half-width img {
+  width: 50%;
+}
+
+.thirds img, .thirds a {
+  width: 33.33%;
+}
+
+.mixwork-gallery img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    font-size: 2vw;
+  }
+     
+  #tracknames {         
+    font-size: 2vw;
+    margin-top: 35%;  
+  }
+  #blurb {   
+    font-size: 2vw;
+  }
+     
+  #logo {
+    max-width: 99%;
+  }
+
+  .col-2 {
+    width: 30%;
+  }
+     
+  .col-13 {
+    width:30%;
+    float:right;
+    text-align: right;
+  }
+}
