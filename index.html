@@ -7,30 +7,41 @@
         
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="TrackWorkfav.jpg" type="image/jpg" sizes="16x16">
-        <script src="script.js"></script>       
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap" rel="stylesheet">
     </head>
     
-    <body>
+    <body id="home">
+       
         <!-- Newletter Overlay -->
-        <div class="newletter">
+        <div id="modal" class="newsletter">
             <div class="form-container">
-                <h3>Newsletter Form</h3>
-                <!-- x icon -->
+                <span class="close">&times;</span>
+                <h3>Newsletter Form</h3> 
                 <form>
                     <label>Email Address*</label>
                     <input>
-                    <button>Sign Up</button>
-                    <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p>
-                </form>
-            </div>
-        </div>
+                    
+                </form> 
+                <button>Sign Up</button>
+                <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p>          
+            </div>       
+        </div> 
 
         <!-- Header -->
         <div class="container" > 
             <div class="row">
                 <div class="col-9">
                     <div class="col-4" > 
-                        <img  id="logo" src="trackwork_newlogo.png"> 
+                        <a href="../index.html">
+                            <!-- <img  id="logo" src="trackwork_newlogo.png">  -->
+                            <video class="lazy" id="logo" autoplay muted loop playsinline width="100%" height="auto">
+                                <source src="vid_logo.MP4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video> 
+                        </a>
                     </div>
                 </div> 
         
@@ -42,26 +53,28 @@
                     </div>
                     
                     <!-- Media Nav Menu -->
-                    <div class="col-13" style="display: inline; overflow: visible; margin-right: 1%">
-                        <a href="https://www.instagram.com/trackwork_/?hl=en" target="_blank">INSTAGRAM</a>
-                        <br> 
-                        <a href="https://twitter.com/trackwork_" target="_blank">TWITTER</a>
-                        <br> 
-                        <a href="https://www.tiktok.com/@trackwork" target="_blank">TIKTOK</a>
-                        <br> 
-                        <a href="https://soundcloud.com/trackwork" target="_blank">SOUNDCLOUD</a>
-                        <br>
-                        <a href="https://trackwork.bandcamp.com/releases" target="_blank">BANDCAMP</a>
-                        <br>    
-                    </div>   
-                    <div class="col-13" style="display: inline; overflow: visible; margin-right: 1%">
-                        <a href="" target="_blank">ARTISTS</a>
-                        <br> 
-                        <a href="" target="_blank">NEWLETTER</a>
-                        <br> 
-                        <a href="" target="_blank">CONTACT</a>
-                        <br>    
-                    </div>                
+                    <div class="col-13">
+                        <div class="menu socialmedia">
+                            <a href="https://www.instagram.com/trackwork_/?hl=en" target="_blank">INSTAGRAM</a>
+                            <br> 
+                            <a href="https://twitter.com/trackwork_" target="_blank">TWITTER</a>
+                            <br> 
+                            <a href="https://www.tiktok.com/@trackwork" target="_blank">TIKTOK</a>
+                            <br> 
+                            <a href="https://soundcloud.com/trackwork" target="_blank">SOUNDCLOUD</a>
+                            <br>
+                            <a href="https://trackwork.bandcamp.com/releases" target="_blank">BANDCAMP</a>
+                            <br>    
+                        </div>   
+                        <div class="menu nav">
+                            <a href="artists/index.html">ARTISTS</a>
+                            <br> 
+                            <button id="myBtn">NEWSLETTER</button>
+                            <br> 
+                            <a href="contact/index.html">CONTACT</a>
+                            <br>    
+                        </div>  
+                    </div>              
                 </div>   
             </div>   
         </div>
@@ -72,39 +85,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: white" id="riverName">
+                    <p style="color: white" class="riverName">
                         <b>VV PETE - <i>FRAUDS</i> (TW011)</b>    
                     </p>
                     <img id="frauds" style="max-width: 100%; opacity: 1" src="media/frauds-1.jpg"  alt="1">  
                     <img id="frauds" style="max-width: 100%; opacity: 1" src="media/Frauds-2.jpg"  alt="1"> 
-                    <div class="half-width">
-                        <img id="fbihbh" style="max-width: 100%; opacity: 1" src="media/fbihbh/fbi-winner1.png"  alt="1"> 
-                        <img id="fbihbh" style="max-width: 100%; opacity: 1" src="media/fbihbh/heart-break-high.jpg"  alt="1"> 
-                    </div> 
-                    <div class="thirds">
-                        <img id="covers" style="max-width: 100%; opacity: 1" src="media/vvpetecovers/1 THE DRIP.png"  alt="1"> 
-                        <img id="covers" style="max-width: 100%; opacity: 1" src="media/vvpetecovers/2 NMD.png"  alt="1"> 
-                        <img id="covers" style="max-width: 100%; opacity: 1" src="media/vvpetecovers/3 A1.png"  alt="1"> 
-                        <img id="covers" style="max-width: 100%; opacity: 1" src="media/vvpetecovers/4 UE.png"  alt="1"> 
-                        <img id="covers" style="max-width: 100%; opacity: 1" src="media/vvpetecovers/5 FRESH FINDS.png"  alt="1"> 
-                        <img id="covers" style="max-width: 100%; opacity: 1" src="media/vvpetecovers/6 RL.jpg"  alt="1"> 
-                    </div> 
                 </div>
 
                 <div class="col-3" >
                     <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
+                        <style>
+                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
+                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
                         <div class='embed-container'> 
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/RfvQxu935zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <video width="100%" height="auto" autoplay muted>
-                            <source src="Vv Rolling credits - right hand media column.mp4" type="video/mp4">
+                        <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/Vv Rolling credits poster.png">
+                            <source src="media/Vv Rolling credits - right hand media column.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video> 
                         
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/799Ncecckau7r7gtrrmCNj?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSRQOgojqtcs?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>            
                 </div>
             </div>
@@ -114,13 +115,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: white" id="riverName">
+                    <p style="color: white" class="riverName">
                         <b>VV PETE - <i>BUSSIT</i> (TW009)</b>   
                     </p>
-                    <p style="color: white" id="tracknames">
-                        Image by Yasmin Goonweyn & Farnoz<br> 
-                    </p>
-                    <img id="bussit" style="max-width: 100%; opacity: 1" src="media/BUSSIT 1.jpg"  alt="1">  
+                    <img id="bussit" style="max-width: 100%; opacity: 1" src="media/BUSSIT 1.jpg"  alt="1"> 
+                    <p style="color: white" class="img-credit">
+                        Image credit - Yasmin Goonweyn & Farnoz<br> 
+                    </p> 
+                    <div class="quotes">
+                        <h4>PROFILE</h4>
+                        <p class="quote">
+                            “From the area that gave us OneFour comes a new face and sound to carry on the legacy.” - <i>Hau Latukefu</i>
+                        </p>
+                        <p class="quote">
+                            “Forget BC and AD. Time will now be divided into BV and AV, such has been the impact of Vv Pete in the short time since she first landed.” - <i>Triple J</i>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="col-3" >
@@ -140,16 +150,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: white" id="riverName">
+                    <p style="color: white" class="riverName">
                         <b>TRACKWORK X PARRA NIGHTS (2022)</b>   
                     </p>
-                    <p style="color: white" id="tracknames">
-                        Images by Ladstreet<br> 
-                    </p>
+                    
                     <div class="half-width">
-                        <img id="parranights" style="max-width: 100%; opacity: 1" src="media/parra-1.jpg"  alt="1">  
+                        <img id="parranights" style="max-width: 100%; opacity: 1" src="media/parra-1.jpg"  alt="1"> 
                         <img id="parranights" style="max-width: 100%; opacity: 1" src="media/parra-2.JPG"  alt="1"> 
                     </div>
+                    <p style="color: white" class="img-credit">
+                        Images credit - Ladstreet<br> 
+                    </p> 
                     <div class="half-width">
                         <img id="parranights" style="max-width: 100%; opacity: 1" src="media/parra-3.JPG"  alt="1"> 
                         <img id="parranights" style="max-width: 100%; opacity: 1" src="media/parra-4.jpg"  alt="1"> 
@@ -168,7 +179,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: white" id="riverName">
+                    <p style="color: white" class="riverName">
                         <b>TRACKWORK MIXWORK MIX SERIES (2021-PRESENT)</b>   
                     </p>
                     <div class="thirds mixwork-gallery">
@@ -202,7 +213,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: white" id="riverName">
+                    <p style="color: white" class="riverName">
                         <b>NTS X LORAINE JAMES GUEST MIX (2022)</b>   
                     </p>
                     <a href="https://www.nts.live/shows/loraine-james/episodes/loraine-james-17th-february-2022" target="_blank">
@@ -224,7 +235,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: white" id="riverName">
+                    <p style="color: white" class="riverName">
                         <b>WALKERBOY - <i>ON A ROLL</i> (TW008)</b>   
                     </p>
                     <img id="opera" style="max-width: 100%; opacity: 1" src="media/walkerboy.jpg"  alt="1">      
@@ -247,7 +258,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: black" id="riverName">
+                    <p style="color: black" class="riverName">
                         <b>KOBI SPICE X SEVY - <i>FIJI WATER</i> (TW007)</b>   
                     </p>
                     <div class="half-width">
@@ -273,13 +284,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: black" id="riverName">
+                    <p style="color: black" class="riverName">
                         <b>TRACKWORK X SYDNEY OPERA HOUSE FOR BARRABUWARI (2021)</b>   
                     </p>
-                    <p style="color: black" id="tracknames">
-                        Images by Marcus Roden & Tamati Smith<br> 
-                    </p>
+                    
                     <img id="opera" style="max-width: 100%; opacity: 1" src="media/opera-house-1.jpg"  alt="1">
+                    <p style="color: white" class="img-credit">
+                        Images credit - Marcus Roden & Tamati Smith<br> 
+                    </p>
                     <img id="opera" style="max-width: 100%; opacity: 1" src="media/opera-house-2.jpg"  alt="1">       
                 </div>
 
@@ -303,7 +315,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p style="color: white" id="riverName">
+                    <p style="color: white" class="riverName">
                         <b>SEVY X BAYANG - <i>NOT FROM HERE</i> (TW003)</b>
                         <br><br>
                         <i>LYCRA<br>
@@ -313,7 +325,7 @@
                          CHANGE UP<br>
                         </i>     
                     </p>
-                    <p style="color: white" id="tracknames">
+                    <p style="color: white" class="tracknames">
                         Lyrics by Sevy and Bayang <br> 
                         Executive produced by Utility <br>
                         Recorded at Trackwork Studios <br> 
@@ -363,7 +375,7 @@
         <div class="container" >        
             <div class="row">                      
                 <div class="col-9" >
-                    <p id="riverName">
+                    <p class="riverName">
                         <b>SNOEE BADMAN - <i>#3BADMAN</i> (TW002)</b>
                         <br><br>
                         <i>INTRO<br>
@@ -375,7 +387,7 @@
                          SOLO STEP<br>
                         </i>
                     </p>
-                    <p id="tracknames">
+                    <p class="tracknames">
                         Lyrics by Snoee Badman <br> 
                         Executive produced by Utility <br>
                         Recorded at Trackwork Studios <br> 
@@ -383,7 +395,7 @@
                         Cover design: Thomas McAlister<br>
                     </p>
 
-                    <img id="breezy" style="max-width: 100%; opacity: 0.7" src="Badman_cover.jpg"  alt="1">
+                    <img id="breezy" style="max-width: 100%; opacity: 0.7" src="media/Badman_cover.jpg"  alt="1">
                     
                     <a href="https://www.thesaturdaypaper.com.au/culture/music/2020/11/21/drill-rapper-snoee-badman/160587720010729" target="_blank">
                         <img id="breezy" style="max-width: 100%; opacity: 1" src="media/satpaper1.png"  alt="1">
@@ -430,7 +442,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-9" >
-                    <p id="riverName">
+                    <p class="riverName">
                         <b>T-BREEZY - <i>2360</i> (TW001)</b>
                         <br><br>
                         <i>DEVIL<br>
@@ -441,7 +453,7 @@
                          INVY (feat. Shaq)<br><br>
                         </i>
                     </p>
-                    <p id="tracknames">
+                    <p class="tracknames">
                         Written by T Breezy <br> 
                         Executive produced by Utility <br>
                         Recorded at Trackwork Studios <br> 
@@ -476,5 +488,50 @@
             </div>
         </div>
     
-    </body>    
+        <script>
+            function youTubes_makeDynamic() {
+                var $ytIframes = $('iframe[src*="youtube.com"]');
+                $ytIframes.each(function (i,e) {
+                    var $ytFrame = $(e);
+                    var ytKey; var tmp = $ytFrame.attr('src').split(/\//); 
+                    tmp = tmp[tmp.length - 1]; tmp = tmp.split('?'); ytKey = tmp[0];
+                    var $ytLoader = $('<div class="ytLoader">');
+                    $ytLoader.append($('<img class="cover" src="https://i.ytimg.com/vi/'+ytKey+'/hqdefault.jpg">'));
+                    $ytLoader.append($('<img class="playBtn" src="play_button.png">'));
+                    $ytLoader.data('$ytFrame',$ytFrame);
+                    $ytFrame.replaceWith($ytLoader);
+                    $ytLoader.click(function () {
+                            var $ytFrame = $ytLoader.data('$ytFrame');
+                            $ytFrame.attr('src',$ytFrame.attr('src')+'?autoplay=1');
+                            $ytLoader.replaceWith($ytFrame);
+                    });
+                });
+            };
+            document.addEventListener(function () {youTubes_makeDynamic()});
+        </script>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script> 
+    </body>   
 </html>

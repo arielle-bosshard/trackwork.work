@@ -10,27 +10,30 @@
         <script src="script.js"></script>       
     </head>
     
-    <body>
+    <body id="contact">
         <!-- Newletter Overlay -->
-        <div class="newletter">
+        <div id="modal" class="newsletter">
             <div class="form-container">
-                <h3>Newsletter Form</h3>
-                <!-- x icon -->
+                <span class="close">&times;</span>
+                <h3>Newsletter Form</h3> 
                 <form>
                     <label>Email Address*</label>
                     <input>
-                    <button>Sign Up</button>
-                    <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p>
-                </form>
-            </div>
-        </div>
+                    
+                </form> 
+                <button>Sign Up</button>
+                <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p>          
+            </div>       
+        </div> 
 
         <!-- Header -->
         <div class="container" > 
             <div class="row">
                 <div class="col-9">
                     <div class="col-4" > 
-                        <img  id="logo" src="../trackwork_newlogo.png"> 
+                        <a href="../index.html">
+                            <img  id="logo" src="../trackwork_newlogo.png"> 
+                        </a>
                     </div>
                 </div> 
         
@@ -42,30 +45,61 @@
                     </div>
                     
                     <!-- Media Nav Menu -->
-                    <div class="col-13" style="display: inline; overflow: visible; margin-right: 1%">
-                        <a href="https://www.instagram.com/trackwork_/?hl=en" target="_blank">INSTAGRAM</a>
-                        <br> 
-                        <a href="https://twitter.com/trackwork_" target="_blank">TWITTER</a>
-                        <br> 
-                        <a href="https://www.tiktok.com/@trackwork" target="_blank">TIKTOK</a>
-                        <br> 
-                        <a href="https://soundcloud.com/trackwork" target="_blank">SOUNDCLOUD</a>
-                        <br>
-                        <a href="https://trackwork.bandcamp.com/releases" target="_blank">BANDCAMP</a>
-                        <br>    
-                    </div>   
-                    <div class="col-13" style="display: inline; overflow: visible; margin-right: 1%">
-                        <a href="" target="_blank">ARTISTS</a>
-                        <br> 
-                        <a href="" target="_blank">NEWLETTER</a>
-                        <br> 
-                        <a href="" target="_blank">CONTACT</a>
-                        <br>    
-                    </div>                
+                    <div class="col-13">
+                        <div class="menu socialmedia">
+                            <a href="https://www.instagram.com/trackwork_/?hl=en" target="_blank">INSTAGRAM</a>
+                            <br> 
+                            <a href="https://twitter.com/trackwork_" target="_blank">TWITTER</a>
+                            <br> 
+                            <a href="https://www.tiktok.com/@trackwork" target="_blank">TIKTOK</a>
+                            <br> 
+                            <a href="https://soundcloud.com/trackwork" target="_blank">SOUNDCLOUD</a>
+                            <br>
+                            <a href="https://trackwork.bandcamp.com/releases" target="_blank">BANDCAMP</a>
+                            <br>    
+                        </div>   
+                        <div class="menu nav">
+                            <a href="../artists/index.html">ARTISTS</a>
+                            <br> 
+                            <button id="myBtn">NEWSLETTER</button>
+                            <br> 
+                            <a href="contact/index.html">CONTACT</a>
+                            <br>    
+                        </div>  
+                    </div>              
                 </div>   
             </div>   
         </div>
 
         <!-- Main -->
+        <main>
+            <section>
+                <p>For all enquiries please email </p> <a href="mailto:CONTACT.GEMWORLD@GMAIL.COM" target="_blank"> contact.trackwork@gmail.com</a>
+            </section>
+        </main>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script> 
     </body>
 </html>

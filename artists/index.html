@@ -7,30 +7,33 @@
         
         <link rel="stylesheet" type="text/css" href="../style.css">
         <link rel="icon" href="../TrackWorkfav.jpg" type="image/jpg" sizes="16x16">
-        <script src="script.js"></script>       
+        <script src="../script.js"></script>       
     </head>
     
     <body>
         <!-- Newletter Overlay -->
-        <div class="newletter">
+        <div id="modal" class="newsletter">
             <div class="form-container">
-                <h3>Newsletter Form</h3>
-                <!-- x icon -->
+                <span class="close">&times;</span>
+                <h3>Newsletter Form</h3> 
                 <form>
                     <label>Email Address*</label>
                     <input>
-                    <button>Sign Up</button>
-                    <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p>
-                </form>
-            </div>
-        </div>
+                    
+                </form> 
+                <button>Sign Up</button>
+                <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p>          
+            </div>       
+        </div> 
 
         <!-- Header -->
         <div class="container" > 
             <div class="row">
                 <div class="col-9">
                     <div class="col-4" > 
-                        <img  id="logo" src="../trackwork_newlogo.png"> 
+                        <a href="../index.html">
+                            <img  id="logo" src="../trackwork_newlogo.png"> 
+                        </a>
                     </div>
                 </div> 
         
@@ -42,30 +45,98 @@
                     </div>
                     
                     <!-- Media Nav Menu -->
-                    <div class="col-13" style="display: inline; overflow: visible; margin-right: 1%">
-                        <a href="https://www.instagram.com/trackwork_/?hl=en" target="_blank">INSTAGRAM</a>
-                        <br> 
-                        <a href="https://twitter.com/trackwork_" target="_blank">TWITTER</a>
-                        <br> 
-                        <a href="https://www.tiktok.com/@trackwork" target="_blank">TIKTOK</a>
-                        <br> 
-                        <a href="https://soundcloud.com/trackwork" target="_blank">SOUNDCLOUD</a>
-                        <br>
-                        <a href="https://trackwork.bandcamp.com/releases" target="_blank">BANDCAMP</a>
-                        <br>    
-                    </div>   
-                    <div class="col-13" style="display: inline; overflow: visible; margin-right: 1%">
-                        <a href="" target="_blank">ARTISTS</a>
-                        <br> 
-                        <a href="" target="_blank">NEWLETTER</a>
-                        <br> 
-                        <a href="" target="_blank">CONTACT</a>
-                        <br>    
-                    </div>                
+                    <div class="col-13">
+                        <div class="menu socialmedia">
+                            <a href="https://www.instagram.com/trackwork_/?hl=en" target="_blank">INSTAGRAM</a>
+                            <br> 
+                            <a href="https://twitter.com/trackwork_" target="_blank">TWITTER</a>
+                            <br> 
+                            <a href="https://www.tiktok.com/@trackwork" target="_blank">TIKTOK</a>
+                            <br> 
+                            <a href="https://soundcloud.com/trackwork" target="_blank">SOUNDCLOUD</a>
+                            <br>
+                            <a href="https://trackwork.bandcamp.com/releases" target="_blank">BANDCAMP</a>
+                            <br>    
+                        </div>   
+                        <div class="menu nav">
+                            <a href="artists/index.html">ARTISTS</a>
+                            <br> 
+                            <button id="myBtn">NEWSLETTER</button>
+                            <br> 
+                            <a href="../contact/index.html">CONTACT</a>
+                            <br>    
+                        </div>  
+                    </div>              
                 </div>   
             </div>   
         </div>
 
         <!-- Main -->
+        <main>
+            <div class="artists">
+                <div class="artist vv-pete">
+                    <a href="https://www.instagram.com/vvpete/?hl=en" target="_blank"><p>VV PETE</p></a>
+                    <a href="https://www.instagram.com/vvpete/?hl=en" target="_blank"><img src="images/1) VvVv Pete - Main Promo 1 [Portrait].jpg" alt="VV PETE"></a>
+                </div>
+
+                <div class="artist utility">
+                    <a href="https://www.instagram.com/utilitycatalogue/?hl=en" target="_blank"><p>UTILITY</p></a>
+                    <a href="https://www.instagram.com/utilitycatalogue/?hl=en" target="_blank"><img src="images/2) Utility.jpg" alt="UTILITY"></a>
+                </div>
+
+                <div class="artist walkerboy">
+                    <a href="https://www.instagram.com/dawalkerboy/?hl=en" target="_blank"><p>WALKERBOY </p></a>
+                    <a href="https://www.instagram.com/dawalkerboy/?hl=en" target="_blank"><img src="images/3) Walkerboy Promo 2 copy.jpg" alt="WALKERBOY "></a>
+                </div>
+
+                <div class="artist tbreezy">
+                    <a href="https://www.instagram.com/tbrxxzy_/?hl=en" target="_blank"><p>T BREEZY</p></a>
+                    <a href="https://www.instagram.com/tbrxxzy_/?hl=en" target="_blank"><img src="images/4) T Breezy - Promo 1 [Credit Tamati Smith].jpg" alt="T BREEZY"></a>
+                </div>
+
+                <div class="artist sevy">
+                    <a href="https://www.instagram.com/45sevy/?hl=en" target="_blank"><p>SEVY</p></a>
+                    <a href="https://www.instagram.com/45sevy/?hl=en" target="_blank"><img src="images/5) Sevy - Promo 1.png" alt="SEVY "></a>
+                </div>
+
+                <div class="artist bayang">
+                    <a href="https://www.instagram.com/datuizm/?hl=en" target="_blank"><p>BAYANG </p></a>
+                    <a href="https://www.instagram.com/datuizm/?hl=en" target="_blank"><img src="images/6) Bayang.jpg" alt="BAYANG "></a>
+                </div>
+
+                <div class="artist snoeebadman">
+                    <a href="https://www.instagram.com/snoeebadman/?hl=en" target="_blank"><p>SNOEE BADMAN</p></a>
+                    <a href="https://www.instagram.com/snoeebadman/?hl=en" target="_blank"><img src="images/7) F079132-R1-29-31A.JPG" alt="SNOEE BADMAN"></a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <img src="../trackwork_newlogo.png" alt="logo">
+        </footer>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("modal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+        </script> 
     </body>
  </html>
