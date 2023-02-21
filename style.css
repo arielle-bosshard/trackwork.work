@@ -7,6 +7,7 @@ body {
 
 .container {
   width: 100%; 
+  overflow: hidden;
 }
 
 .wrapper {
@@ -35,7 +36,6 @@ a:active, #myBtn:active {
 
 [class*="col-"] {
   float: left;   
-  overflow: hidden;
 }
 
 .col-1 {width: 32.5%;}
@@ -156,8 +156,8 @@ div {
 }
 
 .mixwork-gallery img {
-  width: 100%;
-  height: 100%;
+  width: 98%;
+  height: 98%;
 }
 
 #myBtn {
@@ -206,6 +206,17 @@ div {
   cursor: pointer;
 } 
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo {
+  width: 20%;
+  margin: 1px auto;
+}
+
 @media only screen and (max-width: 1080px) {
   /* For mobile phones: */
   [class*="col-"] {
@@ -228,9 +239,13 @@ div {
   .col-2 {
     width: 30%;
   }
+
+  .mixwork .col-3 {
+    margin-top: 10%;
+  }
      
   .col-13 {
-    width:30%;
+    width:40%;
     float:right;
     text-align: right;
   }
