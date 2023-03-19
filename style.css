@@ -76,6 +76,7 @@ a:active, #myBtn:active {
 
 img {
   object-fit: cover;
+  width: 100%;
 }
 
 span {
@@ -216,6 +217,26 @@ footer .logo {
   width: 20%;
   margin: 1px auto;
 }
+
+/*** IMAGES **/
+#frauds-1 {background-image: url(media/frauds-1@25.jpg);}
+#frauds-2 {background-image: url(media/frauds-2@25.jpg);}
+#bussit {background-image: url(media/bussit@25.jpg);}
+#parranights-1 {background-image: url(media/parra-1@75.jpg);}
+#parranights-2 {background-image: url(media/parra-1@75.jpg);}
+#parranights-3 {background-image: url(media/parra-1@75.jpg);}
+#parranights-4 {background-image: url(media/parra-1@75.jpg);}
+#nts-mix {background-image: url(media/nts-mix@25.jpg);}
+#walkerboy {background-image: url(media/walkerboy@25.jpg);}
+#kobi {background-image: url(media/kobi@25.jpg);}
+#sevy {background-image: url(media/sevy@25.jpg);}
+#opera-1 {background-image: url(media/opera-house-1@25.jpg);}
+#opera-2 {background-image: url(media/opera-house-2@25.jpg);}
+#breezy1 {background-image: url(media/sevy-cover@25.jpg);}
+#breezy2 {background-image: url(media/sevy-back@25.jpg);}
+#breezy3 {background-image: url(media/sevy-single@25.jpg);}
+#sevy-bio {background-image: url(images/sevy.jpg);}
+#bayang {background-color: url(images/bayang.jpg);}
 
 @media only screen and (max-width: 1080px) {
   /* For mobile phones: */
