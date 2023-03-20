@@ -184,6 +184,26 @@ div {
   background-color: rgba(255, 255, 255, 0.85); /* Black w/ opacity */
 }
 
+.mc-field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.required.email {
+  margin: 4px 0;
+}
+
+#mc_embed_signup .button, #mce-EMAIL {
+  border: 1px solid black;
+  background-color: white;
+}
+
+#mc_embed_signup .foot {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 /* Modal Content/Box */
 .form-container {
   margin: 20% auto; /* 15% from the top and centered */
@@ -212,8 +232,8 @@ footer {
   align-items: center;
 }
 
-footer .logo {
-  width: 20%;
+footer #logo {
+  width: 10%;
   margin: 1px auto;
 }
 
