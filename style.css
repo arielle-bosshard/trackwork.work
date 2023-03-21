@@ -88,6 +88,13 @@ span {
   z-index: 24;*/  
 }
 
+.embed-container {
+  background: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #home .riverName, #home .tracknames {
   position: absolute;
   z-index: 2;
@@ -160,6 +167,22 @@ div {
   width: 98%;
   height: 98%;
 }
+
+/* YouTube bkg img */
+#fraudsYoutube {background-image: url(media/youtube/fraudsyoutube.jpg);}
+#bussitYoutube {background-image: url(media/youtube/bussityoutube.jpg);}
+#onarollYoutube {background-image: url(media/youtube/onarollyoutube.jpg);}
+#fijiwaterYoutube {background-image: url(media/youtube/kobisevyyoutube.jpg);}
+#tingYoutube {background-image: url(media/youtube/tingyoutube.jpg);}
+#chopitYoutube {background-image: url(media/youtube/chopityoutube.jpg);}
+#lycraYoutube {background-image: url(media/youtube/lycrayoutube.jpg);}
+#tingofcYoutube {background-image: url(media/youtube/tingofcyoutube.jpg);}
+#dogfightYoutube {background-image: url(media/youtube/dogfightyoutube.jpg);}
+#allmyteYoutube {background-image: url(media/youtube/allmyteyoutube.jpg);}
+#shabbaYoutube {background-image: url(media/youtube/shabbayoutube.jpg);}
+#ontheroadYoutube {background-image: url(media/youtube/ontheroadyoutube.jpg);}
+#origamiYoutube {background-image: url(media/youtube/origamiyoutube.jpg);}
+#postedYoutube {background-image: url(media/youtube/postedyoutube.jpg);}
 
 #myBtn {
   background: none;
