@@ -251,12 +251,13 @@ div {
 } 
 
 footer {
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer #logo {
+footer #footer-logo {
   width: 10%;
   margin: 1px auto;
 }
@@ -266,19 +267,20 @@ footer #logo {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
-    font-size: 2vw;
+    font-size: 1.4vw;
   }
      
   .tracknames {         
-    font-size: 2vw;
+    font-size: 1.4vw;
     margin-top: 35%;  
   }
   #blurb {   
-    font-size: 2vw;
+    font-size: 1.4vw;
   }
      
   #logo {
-    max-width: 99%;
+    display: none;
+    max-width: 30%;
   }
 
   .col-2 {
@@ -290,9 +292,12 @@ footer #logo {
   }
      
   .col-13 {
-    width:40%;
+    width:fit-content;
     float:right;
-    text-align: right;
+  }
+
+  footer {
+      visibility: visible;
   }
 }
 
