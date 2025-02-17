@@ -215,7 +215,7 @@ div {
   background-color: rgba(0, 0, 0, 0.2); /* Black w/ opacity */
 }
 
-.mc-field-group {
+#mc_embed_signup .mc-field-group {
   display: flex;
   flex-direction: column;
 }
@@ -248,14 +248,15 @@ h3 {
   font-size: 12px;
   font-weight: bold;
 }
-.mc-field-group {
+
+#mc_embed_signup .mc-field-group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 10vh auto;
 }
 
-#mce-EMAIL {
+#mc_embed_signup .mc-field-group input {
   border: none;
   border-bottom: 1px solid black;
   width: 88%;
@@ -266,7 +267,7 @@ textarea:focus, input:focus {
   border-bottom: 2px solid black;
 }
 
-#mc_embed_signup .button {
+#mc_embed_signup .button, #mc-embedded-subscribe {
   border: 1px #000 solid;
   padding: 8px 16px;
   font-size: 16px;
