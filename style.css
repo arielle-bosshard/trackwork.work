@@ -131,6 +131,10 @@ div {
   margin: 48px 1% 40px 1%;
 }
 
+#large-space-quote {
+  padding-top: 48px;
+}
+
 .quotes h4 {
   color: red;
   font-size: 20px;
@@ -141,11 +145,7 @@ div {
 .quote {
   font-family: 'Newsreader', serif;
   font-size: 36px;
-  margin: 8px auto 36px;
-}
-
-.author {
-  color: red;
+  margin: 8px auto 36px 0;
 }
 
 #logo {
@@ -158,16 +158,27 @@ div {
   flex-flow: row wrap;
 }
 
-.half-width img, .half-width .video-link {
+.half-width img {
   width: 50%;
 }
+
+.col-12 .half-width {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 4px;
+  grid-row-gap: 0px;
+  }
+  
+  .right-link { grid-area: 1 / 1 / 2 / 2; }
+  .left-link { grid-area: 1 / 2 / 2 / 3; }
 
 .thirds a {
   width: 33.33%;
 }
 
 .image-gallery-wrapper {
-  width: 33.171%;
+  width: 33%;
 }
 
 .mixwork-gallery img, .barcadipapi-gallery img {
@@ -259,7 +270,7 @@ h3 {
 #mc_embed_signup .mc-field-group input {
   border: none;
   border-bottom: 1px solid black;
-  width: 88%;
+  width: calc(100% - 100px);
 }
 
 textarea:focus, input:focus {
