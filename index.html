@@ -1,884 +1,2331 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>TRACKWORK</title>
-        
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" href="TrackWorkfav.jpg" type="image/jpg" sizes="16x16">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TRACKWORK</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap" rel="stylesheet">
-        <script>
-            function youTubes_makeDynamic() {
-                var $ytIframes = $('iframe[src*="https://www.youtube.com"]');
-                $ytIframes.each(function (i,e) {
-                    var $ytFrame = $(e);
-                    var ytKey; var tmp = $ytFrame.attr('src').split(/\//); tmp = tmp[tmp.length - 1]; tmp = tmp.split('?'); ytKey = tmp[0];
-                    var $ytLoader = $('<div class="ytLoader">');
-                    $ytLoader.append($('<img class="cover" src="https://i.ytimg.com/vi/'+ytKey+'/hqdefault.jpg">'));
-                    $ytLoader.append($('<img class="playBtn" src="play_button.png">'));
-                    $ytLoader.data('$ytFrame',$ytFrame);
-                    $ytFrame.replaceWith($ytLoader);
-                    $ytLoader.click(function () {
-                        var $ytFrame = $ytLoader.data('$ytFrame');
-                        $ytFrame.attr('src',$ytFrame.attr('src')+'?autoplay=1');
-                        $ytLoader.replaceWith($ytFrame);
-                    });
-                });
-            };
-            $(document).ready(function () {youTubes_makeDynamic()});
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="TrackWorkfav.jpg" type="image/jpg" sizes="16x16" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function youTubes_makeDynamic() {
+        var $ytIframes = $('iframe[src*="https://www.youtube.com"]')
+        $ytIframes.each(function (i, e) {
+          var $ytFrame = $(e)
+          var ytKey
+          var tmp = $ytFrame.attr('src').split(/\//)
+          tmp = tmp[tmp.length - 1]
+          tmp = tmp.split('?')
+          ytKey = tmp[0]
+          var $ytLoader = $('<div class="ytLoader">')
+          $ytLoader.append(
+            $(
+              '<img class="cover" src="https://i.ytimg.com/vi/' +
+                ytKey +
+                '/hqdefault.jpg">'
+            )
+          )
+          $ytLoader.append($('<img class="playBtn" src="play_button.png">'))
+          $ytLoader.data('$ytFrame', $ytFrame)
+          $ytFrame.replaceWith($ytLoader)
+          $ytLoader.click(function () {
+            var $ytFrame = $ytLoader.data('$ytFrame')
+            $ytFrame.attr('src', $ytFrame.attr('src') + '?autoplay=1')
+            $ytLoader.replaceWith($ytFrame)
+          })
+        })
+      }
+      $(document).ready(function () {
+        youTubes_makeDynamic()
+      })
+    </script>
+  </head>
+
+  <body id="home">
+    <!-- Newletter Overlay -->
+    <div id="modal" class="newsletter">
+      <div class="form-container">
+        <span class="close">&times;</span>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form
+            action="https://work.us14.list-manage.com/subscribe/post?u=75e17e9a9c746bc4f55548c0c&amp;id=e119f2f488&amp;f_id=006483e0f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <div id="mc_embed_signup_scroll">
+              <h3>TRACKWORK NEWSLETTER</h3>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">E-MAIL:</label>
+                <input
+                  type="email"
+                  value=""
+                  name="EMAIL"
+                  class="required email"
+                  id="mce-EMAIL"
+                  required
+                />
+                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+              </div>
+              <div hidden="true">
+                <input type="hidden" name="tags" value="7408487" />
+              </div>
+              <div id="mce-responses" class="clear foot">
+                <div
+                  class="response"
+                  id="mce-error-response"
+                  style="display: none"
+                ></div>
+                <div
+                  class="response"
+                  id="mce-success-response"
+                  style="display: none"
+                ></div>
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_75e17e9a9c746bc4f55548c0c_e119f2f488"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
+              <div class="clear foot subscribe-button">
+                <input
+                  type="submit"
+                  value="SUBSCRIBE"
+                  name="subscribe"
+                  id="mc-embedded-subscribe"
+                  class="button"
+                />
+                <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <script
+          type="text/javascript"
+          src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+        ></script>
+        <script type="text/javascript">
+          ;(function ($) {
+            window.fnames = new Array()
+            window.ftypes = new Array()
+            fnames[0] = 'EMAIL'
+            ftypes[0] = 'email'
+            fnames[1] = 'FNAME'
+            ftypes[1] = 'text'
+            fnames[2] = 'LNAME'
+            ftypes[2] = 'text'
+            fnames[3] = 'ADDRESS'
+            ftypes[3] = 'address'
+            fnames[4] = 'PHONE'
+            ftypes[4] = 'phone'
+            fnames[5] = 'BIRTHDAY'
+            ftypes[5] = 'birthday'
+          })(jQuery)
+          var $mcj = jQuery.noConflict(true)
         </script>
-    </head>
-    
-    <body id="home">
-       
-        <!-- Newletter Overlay -->
-        <div id="modal" class="newsletter">
-            <div class="form-container">
-                <span class="close">&times;</span>
-                <!-- Begin Mailchimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="https://work.us14.list-manage.com/subscribe/post?u=75e17e9a9c746bc4f55548c0c&amp;id=e119f2f488&amp;f_id=006483e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <h3>TRACKWORK NEWSLETTER</h3>
-                            <div class="mc-field-group">
-                                <label for="mce-EMAIL">E-MAIL:</label>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-                                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                            </div>
-                            <div hidden="true"><input type="hidden" name="tags" value="7408487"></div>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_75e17e9a9c746bc4f55548c0c_e119f2f488" tabindex="-1" value=""></div> 
-                                <div class="clear foot subscribe-button">
-                                    <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                    <p>YOUR PRIVACY IS IMPORTANT AND WILL BE MAINTAINED.</p> 
-                                </div>
-                            </div>
-                    </form>
-                    
-                </div>
-                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                <!--End mc_embed_signup-->         
-            </div>       
-        </div> 
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
 
-        <!-- Header -->
-        <div class="container" > 
-            <div class="row">
-                <div class="col-9">
-                    <div class="col-4" > 
-                        <a href="./">
-                            <img  id="logo" src="trackwork_newlogo.png"> 
-                        </a>
-                    </div>
-                </div> 
-        
-                <div class="col-3"> 
-                    <div class="col-2" id="blurb" style="display: inline;  margin-right: 0% ">
-                        <span style="color: white; -webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black;">
-                        TRACKWORK IS A SYDNEY BASED LABEL & PLATFORM RELEASING PROJECTS EXECUTIVE PRODUCED BY UTILITY & ASSOCIATES
-                        </span>               
-                    </div>
-                    
-                    <!-- Media Nav Menu -->
-                    <div class="col-13">
-                        <div class="menu socialmedia">
-                            <a href="https://www.instagram.com/trackwork_/?hl=en" target="_blank">INSTAGRAM</a>
-                            <br> 
-                            <a href="https://twitter.com/trackwork_" target="_blank">TWITTER</a>
-                            <br> 
-                            <a href="https://www.tiktok.com/@trackwork" target="_blank">TIKTOK</a>
-                            <br> 
-                            <a href="https://soundcloud.com/trackwork" target="_blank">SOUNDCLOUD</a>
-                            <br>
-                            <a href="https://trackwork.bandcamp.com" target="_blank">BANDCAMP</a>
-                            <br>    
-                        </div>   
-                        <div class="menu nav">
-                            <button id="myBtn">NEWSLETTER</button>
-                            <br> 
-                            <a href="contact/" target="_blank">CONTACT</a>
-                            <br>    
-                        </div>  
-                    </div>              
-                </div>   
-            </div>   
+    <!-- Header -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <div class="col-4">
+            <a href="./">
+              <img id="logo" src="trackwork_newlogo.png" />
+            </a>
+          </div>
         </div>
 
-        <!-- Main -->
+        <div class="col-3">
+          <div
+            class="col-2"
+            id="blurb"
+            style="display: inline; margin-right: 0%"
+          >
+            <span
+              style="
+                color: white;
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: black;
+              "
+            >
+              TRACKWORK IS A SYDNEY BASED LABEL & PLATFORM RELEASING PROJECTS
+              EXECUTIVE PRODUCED BY UTILITY & ASSOCIATES
+            </span>
+          </div>
 
-        <!-- VV PETE Wassa -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <img id="wassa" style="max-width: 100%; opacity: 1" src="media/1.jpg" alt="1" loading="lazy">  
-                    <img id="wassa-1" style="max-width: 100%; opacity: 1" src="media/2.jpg" alt="1" loading="lazy"> 
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="wassayoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EIxE1VKcKUg?si=Wp4ibJFeiyxeSh_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-
-                        <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/wassa-credits-reel-poster.jpg">
-                            <source src="media/wassa-credits-reel.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> 
-
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4hrqUMXWFIvyUbvckqk974?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                        <!-- <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3987941874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/track/vv-pete-wassa-feat-utility-formation-boyz">Vv Pete - Wassa (Feat. UTILITY, Formation Boyz) by TRACKWORK</a></iframe> -->
-                    
-                    </div>            
-                </div>
+          <!-- Media Nav Menu -->
+          <div class="col-13">
+            <div class="menu socialmedia">
+              <a
+                href="https://www.instagram.com/trackwork_/?hl=en"
+                target="_blank"
+                >INSTAGRAM</a
+              >
+              <br />
+              <a href="https://twitter.com/trackwork_" target="_blank"
+                >TWITTER</a
+              >
+              <br />
+              <a href="https://www.tiktok.com/@trackwork" target="_blank"
+                >TIKTOK</a
+              >
+              <br />
+              <a href="https://www.youtube.com/@TRACKWORKTV" target="_blank"
+                >YOUTUBE</a
+              >
+              <br />
+              <a href="https://soundcloud.com/trackwork" target="_blank"
+                >SOUNDCLOUD</a
+              >
+              <br />
             </div>
+            <div class="menu nav">
+              <a href="https://trackwork.bandcamp.com" target="_blank"
+                >BANDCAMP</a
+              >
+              <br />
+              <a href="https://trackwork.bandcamp.com/merch" target="_blank"
+                >MERCH</a
+              >
+              <br />
+              <button id="myBtn">NEWSLETTER</button>
+              <br />
+              <a href="contact/" target="_blank">CONTACT</a>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+
+    <!-- VV PETE Wassa -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <img
+            id="wassa"
+            style="max-width: 100%; opacity: 1"
+            src="media/1.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <img
+            id="wassa-1"
+            style="max-width: 100%; opacity: 1"
+            src="media/2.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- VV PETE Taken -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <img id="taken" style="max-width: 100%; opacity: 1" src="media/3.jpg" alt="1" loading="lazy">  
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>
-                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="takenyoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zY_3YTe_Zrc?si=gDHL13f6leRUq1EV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-   
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0luRXW2hbGTMJ7QZgr5Tap?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=73011000/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/track/vv-pete-taken-prod-utility">Vv Pete - Taken (prod. UTILITY) by Vv Pete, UTILITY</a></iframe>
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="wassayoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/EIxE1VKcKUg?si=Wp4ibJFeiyxeSh_3"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+
+            <video
+              class="lazy"
+              autoplay
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/wassa-credits-reel-poster.jpg"
+            >
+              <source src="media/wassa-credits-reel.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/4hrqUMXWFIvyUbvckqk974?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+
+            <!-- <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3987941874/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/track/vv-pete-wassa-feat-utility-formation-boyz">Vv Pete - Wassa (Feat. UTILITY, Formation Boyz) by TRACKWORK</a></iframe> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VV PETE Taken -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <img
+            id="taken"
+            style="max-width: 100%; opacity: 1"
+            src="media/3.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- VV PETE Mashallah -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <img id="mashallah" style="max-width: 100%; opacity: 1" src="media/4.jpg" alt="1" loading="lazy">  
-                    <img id="mashallah-1" style="max-width: 100%; opacity: 1" src="media/5.jpg" alt="1" loading="lazy"> 
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <video class="lazy" autoplay controls muted loop playsinline width="100%" height="auto" poster="media/mashalla-hawa-phone-clip-poster.jpg">
-                            <source src="media/mashalla-hawa-phone-clip.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-
-                        <style>
-                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="mashallahyoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/COmGCl3cqfU?si=X5_NgQDlc0XHa3WK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6IzSh3p8d9LaZemZi7FP6o?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                        <iframe style="border: 0; width: 100%; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=924371128/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/album/mashallah-reworked">Mashallah (Reworked) by Vv Pete, Brodinski, Clementaum, DoloRRes, Utility</a></iframe>
-                        
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="takenyoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zY_3YTe_Zrc?si=gDHL13f6leRUq1EV"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/0luRXW2hbGTMJ7QZgr5Tap?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+
+            <iframe
+              style="border: 0; width: 100%; height: 120px"
+              src="https://bandcamp.com/EmbeddedPlayer/track=73011000/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+              seamless
+              ><a
+                href="https://trackwork.bandcamp.com/track/vv-pete-taken-prod-utility"
+                >Vv Pete - Taken (prod. UTILITY) by Vv Pete, UTILITY</a
+              ></iframe
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VV PETE Mashallah -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <img
+            id="mashallah"
+            style="max-width: 100%; opacity: 1"
+            src="media/4.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <img
+            id="mashallah-1"
+            style="max-width: 100%; opacity: 1"
+            src="media/5.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- TRACKWORK Club Service -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >                 
-                    <div class="half-width">
-                        <img id="club-service-1" style="max-width: 100%; opacity: 1" src="media/6.1.jpg"  alt="1" loading="lazy"> 
-                        <img id="club-service-2" style="max-width: 100%; opacity: 1" src="media/6.2.jpg"  alt="1" loading="lazy"> 
-                    </div>
-                    <img id="club-service-3" style="max-width: 100%; opacity: 1" src="media/7.jpg"  alt="1" loading="lazy"> 
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <video
+              class="lazy"
+              autoplay
+              controls
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/mashalla-hawa-phone-clip-poster.jpg"
+            >
+              <source
+                src="media/mashalla-hawa-phone-clip.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
 
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-                        <div class='embed-container' id="clubserviceyoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/aj0UJmkB4B4?si=RQZfY4ZWbhFN0quS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div> 
-
-                        <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/club-service-table-reel-poster.jpg">
-                            <source src="media/club-service-table-reel.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-
-                    </div>     
-                </div>
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="mashallahyoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/COmGCl3cqfU?si=X5_NgQDlc0XHa3WK"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/6IzSh3p8d9LaZemZi7FP6o?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+
+            <iframe
+              style="border: 0; width: 100%; height: 340px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=924371128/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+              seamless
+              ><a href="https://trackwork.bandcamp.com/album/mashallah-reworked"
+                >Mashallah (Reworked) by Vv Pete, Brodinski, Clementaum,
+                DoloRRes, Utility</a
+              ></iframe
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRACKWORK Club Service -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <div class="half-width">
+            <img
+              id="club-service-1"
+              style="max-width: 100%; opacity: 1"
+              src="media/6.1.jpg"
+              alt="1"
+              loading="lazy"
+            />
+            <img
+              id="club-service-2"
+              style="max-width: 100%; opacity: 1"
+              src="media/6.2.jpg"
+              alt="1"
+              loading="lazy"
+            />
+          </div>
+          <img
+            id="club-service-3"
+            style="max-width: 100%; opacity: 1"
+            src="media/7.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- T BREEZY X WALKERBOY Souths Most Wanted -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <img id="southMostWanted" style="max-width: 100%; opacity: 1" src="media/8.jpg"  alt="1" loading="lazy"> 
-                    <div id="large-space-quote" class="quotes">
-                        <h4>PROFILE</h4>
-                        <p class="quote">
-                            “They are telling stories that are not told in mainstream music” - <i>VICE</i>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <a href="https://trackwork.bandcamp.com/merch" target="_blank">
-                            <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/smw-shirts-merch-video-poster.jpg">
-                                <source src="media/smw-shirts-merch-video.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>     
-                        </a>
-
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5RxqqLZmax9JUDet82iJhR?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=564253406/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/album/souths-most-wanted">Souths Most Wanted by T Breezy x Walkerboy</a></iframe>
-
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="clubserviceyoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/aj0UJmkB4B4?si=RQZfY4ZWbhFN0quS"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+
+            <video
+              class="lazy"
+              autoplay
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/club-service-table-reel-poster.jpg"
+            >
+              <source
+                src="media/club-service-table-reel.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <img id="southMostWanted1" style="max-width: 100%; opacity: 1" src="media/9.jpg"  alt="1" loading="lazy"> 
-                </div>
+      </div>
+    </div>
 
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/smw-video-loop-poster.jpg">
-                            <source src="media/smw-video-loop.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>   
-
-                    </div>            
-                </div>
-            </div>
-        </div>
-
-        <!-- VV PETE Barcadi Papi -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <div class="thirds barcadipapi-gallery">
-                        <div class="image-gallery-wrapper">
-                            <img id="barcadipapi-1" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/10.1.jpg"  alt="1" loading="lazy"> 
-                        </div>
-                        <div class="image-gallery-wrapper">
-                            <img id="barcadipapi-2" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/10.2.jpg"  alt="1" loading="lazy">
-                        </div>
-                            <div class="image-gallery-wrapper">
-                            <img id="barcadipapi-3" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/10.3.jpg"  alt="1" loading="lazy">
-                        </div>
-                        <div class="image-gallery-wrapper">
-                            <img id="barcadipapi-4" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/10.4.jpg"  alt="1" loading="lazy">
-                        </div>
-                            <div class="image-gallery-wrapper">
-                            <img id="barcadipapi-5" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/10.5.jpg"  alt="1" loading="lazy">
-                        </div>
-                    </div>
-                    <img id="barcadipapi" style="max-width: 100%; opacity: 1" src="media/11.jpg" alt="1" loading="lazy">  
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>
-                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="bacardiyoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fJk1ypsvOZE?si=jlzf79dGDRJrHpHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/bacardi-papi-credits-reel-poster.jpg">
-                            <source src="media/bacardi-papi-credits-reel.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> 
-                        
-                        
-                    </div>            
-                </div>
-            </div>
+    <!-- T BREEZY X WALKERBOY Souths Most Wanted -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <img
+            id="southMostWanted"
+            style="max-width: 100%; opacity: 1"
+            src="media/8.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <div id="large-space-quote" class="quotes">
+            <h4>PROFILE</h4>
+            <p class="quote">
+              “They are telling stories that are not told in mainstream music” -
+              <i>VICE</i>
+            </p>
+          </div>
         </div>
 
-        <!-- VV PETE Jordans -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <div class="thirds jordans-gallery">
-                        <div class="image-gallery-wrapper">
-                            <img id="jordans-1" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/12.1.jpg"  alt="1" loading="lazy"> 
-                        </div>
-                        <div class="image-gallery-wrapper">
-                            <img id="jordans-2" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/12.2.jpg"  alt="1" loading="lazy">
-                        </div>
-                            <div class="image-gallery-wrapper">
-                            <img id="jordans-3" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/12.3.jpg"  alt="1" loading="lazy">
-                        </div>
-                        <div class="image-gallery-wrapper">
-                            <img id="jordans-4" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/12.4.jpg"  alt="1" loading="lazy">
-                        </div>
-                            <div class="image-gallery-wrapper">
-                            <img id="jordans-5" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/12.5.jpg"  alt="1" loading="lazy">
-                        </div>
-                        <div class="image-gallery-wrapper">
-                            <img id="jordans-6" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/12.6.jpg"  alt="1" loading="lazy">
-                        </div>
-                    </div>
-                    <img id="jordans" style="max-width: 100%; opacity: 1" src="media/13.jpg" alt="1" loading="lazy">  
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <a href="https://trackwork.bandcamp.com/merch" target="_blank">
+              <video
+                class="lazy"
+                autoplay
+                muted
+                loop
+                playsinline
+                width="100%"
+                height="auto"
+                poster="media/smw-shirts-merch-video-poster.jpg"
+              >
+                <source
+                  src="media/smw-shirts-merch-video.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </a>
 
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <div class="half-width">
-                            <a class="video-link left-link" href="https://trackwork.bandcamp.com/album/vv-pete-jordan-1s-exclusive-pack" target="_blank">
-                                <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/jordan-1s-bandcamp-exclusive-pack-square-poster.jpg">
-                                    <source src="media/jordan-1s-bandcamp-exclusive-pack-square.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video> 
-                            </a>
-                            <a class="video-link right-link" href="https://trackwork.bandcamp.com/album/vv-pete-bacardi-papi-exclusive-pack" target="_blank">
-                                <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/bacardi-papi-credits-reel-poster.jpg">
-                                    <source src="media/bacardi-papi-exclusive-pack-square.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video> 
-                            </a>
-                        </div>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2VU0FHPZfnkCYQLTTosD9e?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        
-                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=545045604/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/album/vv-pete-jordan-1s-exclusive-pack">Vv Pete - Jordan 1s [Exclusive Pack] by TRACKWORK</a></iframe>
-                        <style>
-                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="jordanyoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/T3Q385sBBVA?si=R5aD83uj--qshL2V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        
-                    </div>            
-                </div>
-            </div>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/album/5RxqqLZmax9JUDet82iJhR?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+
+            <iframe
+              style="border: 0; width: 100%; height: 120px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=564253406/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+              seamless
+              ><a href="https://trackwork.bandcamp.com/album/souths-most-wanted"
+                >Souths Most Wanted by T Breezy x Walkerboy</a
+              ></iframe
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <img
+            id="southMostWanted1"
+            style="max-width: 100%; opacity: 1"
+            src="media/9.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- VV PETE Media -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <img id="media-1" style="max-width: 100%; opacity: 1" src="media/14.jpg" alt="1" loading="lazy">  
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <video
+              class="lazy"
+              autoplay
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/smw-video-loop-poster.jpg"
+            >
+              <source src="media/smw-video-loop.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/vv-pete-jordan1s-live-at-the-hordern-pavilion-27042023-side-stage-poster.jpg">
-                            <source src="media/vv-pete-jordan1s-live-at-the-hordern-pavilion-27042023-side-stage.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> 
-                        
-                        <style>
-                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }
-                        </style>
-                        <div class='embed-container' id="sbsyoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V77MYpdDnQw?si=XFIhuPbuPG_kAKib" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>            
-                </div>
+    <!-- VV PETE Barcadi Papi -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <div class="thirds barcadipapi-gallery">
+            <div class="image-gallery-wrapper">
+              <img
+                id="barcadipapi-1"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/10.1.jpg"
+                alt="1"
+                loading="lazy"
+              />
             </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="barcadipapi-2"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/10.2.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="barcadipapi-3"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/10.3.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="barcadipapi-4"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/10.4.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="barcadipapi-5"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/10.5.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <img
+            id="barcadipapi"
+            style="max-width: 100%; opacity: 1"
+            src="media/11.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- VV PETE Frauds Reworked -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <img id="frauds-reworked-1" style="max-width: 100%; opacity: 1" src="media/15.jpg" alt="1" loading="lazy">  
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>
-                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="mallgrabyoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kUYCOrgpXyQ?si=vZYdo9NDhccVYVeF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6QnPjjXrL8PBfwJHxtqSdm?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                        <iframe style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=3924558385/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/album/vv-pete-frauds-reworked">Vv Pete - Frauds (Reworked) by TRACKWORK</a></iframe>
-
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="bacardiyoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/fJk1ypsvOZE?si=jlzf79dGDRJrHpHM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+            <video
+              class="lazy"
+              autoplay
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/bacardi-papi-credits-reel-poster.jpg"
+            >
+              <source
+                src="media/bacardi-papi-credits-reel.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VV PETE Jordans -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <div class="thirds jordans-gallery">
+            <div class="image-gallery-wrapper">
+              <img
+                id="jordans-1"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/12.1.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="jordans-2"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/12.2.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="jordans-3"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/12.3.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="jordans-4"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/12.4.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="jordans-5"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/12.5.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+            <div class="image-gallery-wrapper">
+              <img
+                id="jordans-6"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/12.6.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <img
+            id="jordans"
+            style="max-width: 100%; opacity: 1"
+            src="media/13.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- VV PETE Frauds -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: white" class="riverName">
-                        <b>VV PETE - <i>FRAUDS</i> (TW011)</b>    
-                    </p>
-                    <img id="frauds-1" style="max-width: 100%; opacity: 1" src="media/frauds-1.jpg" alt="1" loading="lazy">  
-                    <img id="frauds-2" style="max-width: 100%; opacity: 1" src="media/frauds-2.jpg" alt="1" loading="lazy"> 
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>
-                            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
-                            .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="fraudsYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RfvQxu935zE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        <video class="lazy" autoplay muted loop playsinline width="100%" height="auto" poster="media/Vv Rolling credits poster.jpg">
-                            <source src="media/vv-rolling-credits.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video> 
-                        
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/799Ncecckau7r7gtrrmCNj?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <div class="half-width">
+              <a
+                class="video-link left-link"
+                href="https://trackwork.bandcamp.com/album/vv-pete-jordan-1s-exclusive-pack"
+                target="_blank"
+              >
+                <video
+                  class="lazy"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  width="100%"
+                  height="auto"
+                  poster="media/jordan-1s-bandcamp-exclusive-pack-square-poster.jpg"
+                >
+                  <source
+                    src="media/jordan-1s-bandcamp-exclusive-pack-square.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </a>
+              <a
+                class="video-link right-link"
+                href="https://trackwork.bandcamp.com/album/vv-pete-bacardi-papi-exclusive-pack"
+                target="_blank"
+              >
+                <video
+                  class="lazy"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  width="100%"
+                  height="auto"
+                  poster="media/bacardi-papi-credits-reel-poster.jpg"
+                >
+                  <source
+                    src="media/bacardi-papi-exclusive-pack-square.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </a>
             </div>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/2VU0FHPZfnkCYQLTTosD9e?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+
+            <iframe
+              style="border: 0; width: 100%; height: 120px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=545045604/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+              seamless
+              ><a
+                href="https://trackwork.bandcamp.com/album/vv-pete-jordan-1s-exclusive-pack"
+                >Vv Pete - Jordan 1s [Exclusive Pack] by TRACKWORK</a
+              ></iframe
+            >
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="jordanyoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/T3Q385sBBVA?si=R5aD83uj--qshL2V"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VV PETE Media -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <img
+            id="media-1"
+            style="max-width: 100%; opacity: 1"
+            src="media/14.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- VV PETE Bussit -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: white" class="riverName">
-                        <b>VV PETE - <i>BUSSIT</i> (TW009)</b>   
-                    </p>
-                    <img id="bussit" style="max-width: 100%; opacity: 1" src="media/bussit.jpg"  alt="1" loading="lazy"> 
-                    <div class="quotes">
-                        <h4>PROFILE</h4>
-                        <p class="quote">
-                            “From the area that gave us OneFour comes a new face and sound to carry on the legacy.” - <i>Hau Latukefu</i>
-                        </p>
-                        <p class="quote">
-                            “Forget BC and AD. Time will now be divided into BV and AV, such has been the impact of Vv Pete in the short time since she first landed.” - <i>Triple J</i>
-                        </p>
-                    </div>
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <video
+              class="lazy"
+              autoplay
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/vv-pete-jordan1s-live-at-the-hordern-pavilion-27042023-side-stage-poster.jpg"
+            >
+              <source
+                src="media/vv-pete-jordan1s-live-at-the-hordern-pavilion-27042023-side-stage.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
 
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-                        <div class='embed-container' id="bussitYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RT7mCETGi7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-                        </div>
-
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2rniJeDskk1s6xOcfio3RV?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>            
-                </div>
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="sbsyoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/V77MYpdDnQw?si=XFIhuPbuPG_kAKib"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+          </div>
         </div>
-        
-        <!-- PARRA NIGHTS -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: white" class="riverName">
-                        <b>TRACKWORK X PARRA NIGHTS (2022)</b>   
-                    </p>
-                    
-                    <div class="half-width">
-                        <img id="parranights-1" style="max-width: 100%; opacity: 1" src="media/parra-1.jpg"  alt="1" loading="lazy"> 
-                        <img id="parranights-2" style="max-width: 100%; opacity: 1" src="media/parra-2.jpg"  alt="1" loading="lazy"> 
-                    </div>
-                    <p style="color: white" class="img-credit">
-                        Images credit - Ladstreet<br> 
-                    </p> 
-                    <div class="half-width">
-                        <img id="parranights-3" style="max-width: 100%; opacity: 1" src="media/parra-3.jpg"  alt="1" loading="lazy"> 
-                        <img id="parranights-4" style="max-width: 100%; opacity: 1" src="media/parra-4.jpg"  alt="1" loading="lazy"> 
-                    </div>
-                </div>
+      </div>
+    </div>
 
-                <div class="col-3" >
-                    <div  class="col-12">
-                        
-                    </div>            
-                </div>
-            </div>
-        </div>
-
-        <!-- TRACKWORK MIXWORK MIX SERIES -->
-        <div class="container mixwork">
-            <div class="row">
-                <div class="col-9" >
-                    <div class="thirds mixwork-gallery">
-                        <a href="https://soundcloud.com/trackwork/mixwork-001-tmorimoto" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/mixwork01.jpg"  alt="1" loading="lazy"> 
-                        </a>  
-                        <a href="https://soundcloud.com/trackwork/mixwork-002-crazymike3ndles5-160921" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px;" src="media/mixwork02.jpg"  alt="1" loading="lazy"> 
-                        </a>
-                        <a href="https://soundcloud.com/trackwork/mixwork-003-serwah-attafuah-211021" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 0px 1px 0px;" src="media/mixwork03.jpg"  alt="1" loading="lazy"> 
-                        </a>
-                        <a href="https://soundcloud.com/trackwork/mixwork-004-sevy-101221" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px;" src="media/mixwork04.jpg"  alt="1" loading="lazy"> 
-                        </a>
-                        <a href="https://soundcloud.com/trackwork/mixwork-005-rydeen-10222" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px;" src="media/mixwork05.jpg"  alt="1" loading="lazy"> 
-                        </a> 
-
-                        <a href="https://soundcloud.com/trackwork/club-service-mixwork-poison?in=trackwork/sets/mixwork-1" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px;" src="media/mixwork006.jpg"  alt="1" loading="lazy"> 
-                        </a> 
-                        <a href="https://soundcloud.com/trackwork/mixwork-007-cassius-select?in=trackwork/sets/mixwork-1" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px;" src="media/mixwork007.jpg"  alt="1" loading="lazy"> 
-                        </a> 
-                        <a href="https://soundcloud.com/trackwork/mixwork-008-serwah-attafuah-14324?in=trackwork/sets/mixwork-1" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px;" src="media/mixwork008.jpg"  alt="1" loading="lazy"> 
-                        </a> 
-                        <a href="https://soundcloud.com/trackwork/mixwork-009-bayang?in=trackwork/sets/mixwork-1" target="_blank">
-                            <img id="mixwork" style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px;" src="media/mixwork009.jpg"  alt="1" loading="lazy"> 
-                        </a> 
-                    </div>
-                    <p style="color: black" class="img-credit">
-                        <b>TRACKWORK MIXWORK MIX SERIES (2021-PRESENT)</b>   
-                    </p>
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1552971145&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                            <a href="https://soundcloud.com/trackwork" title="TRACKWORK™" target="_blank" style="color: #cccccc; text-decoration: none;">TRACKWORK™</a> · <a href="https://soundcloud.com/trackwork/sets/mixwork-1" title="MIXWORK" target="_blank" style="color: #cccccc; text-decoration: none;">MIXWORK</a>
-                        </div>
-                    </div>            
-                </div>
-            </div>
+    <!-- VV PETE Frauds Reworked -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <img
+            id="frauds-reworked-1"
+            style="max-width: 100%; opacity: 1"
+            src="media/15.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- NTS X LORAINE JAMES GUEST MIX --> 
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: white" class="riverName">
-                        <b>NTS X LORAINE JAMES GUEST MIX (2022)</b>   
-                    </p>
-                    <a href="https://www.nts.live/shows/loraine-james/episodes/loraine-james-17th-february-2022" target="_blank">
-                        <img id="nts-mix" style="max-width: 100%; opacity: 1" src="media/nts-mix.jpg" alt="nts-mix" loading="lazy"> 
-                    </a>   
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0SrLwIX8UMrmeL7RemB05N?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-                        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FCashmereRadio%2Fcashmere-specials-trackwork-frauds-with-vv-pete-utility-25112022%2F" frameborder="0" ></iframe>
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="mallgrabyoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/kUYCOrgpXyQ?si=vZYdo9NDhccVYVeF"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/album/6QnPjjXrL8PBfwJHxtqSdm?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+
+            <iframe
+              style="border: 0; width: 100%; height: 307px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=3924558385/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+              seamless
+              ><a
+                href="https://trackwork.bandcamp.com/album/vv-pete-frauds-reworked"
+                >Vv Pete - Frauds (Reworked) by TRACKWORK</a
+              ></iframe
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VV PETE Frauds -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: white" class="riverName">
+            <b>VV PETE - <i>FRAUDS</i> (TW011)</b>
+          </p>
+          <img
+            id="frauds-1"
+            style="max-width: 100%; opacity: 1"
+            src="media/frauds-1.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <img
+            id="frauds-2"
+            style="max-width: 100%; opacity: 1"
+            src="media/frauds-2.jpg"
+            alt="1"
+            loading="lazy"
+          />
         </div>
 
-        <!-- WALKERBOY --> 
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: white" class="riverName">
-                        <b>WALKERBOY - <i>ON A ROLL</i> (TW008)</b>   
-                    </p>
-                    <img id="walkerboy" style="max-width: 100%; opacity: 1" src="media/walkerboy.jpg"  alt="1" loading="lazy">      
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="onarollYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/izvwwYKzylA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0c3tgxRUF9YZDYfYCyClJo?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="fraudsYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RfvQxu935zE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
             </div>
+            <video
+              class="lazy"
+              autoplay
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/Vv Rolling credits poster.jpg"
+            >
+              <source src="media/vv-rolling-credits.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/799Ncecckau7r7gtrrmCNj?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VV PETE Bussit -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: white" class="riverName">
+            <b>VV PETE - <i>BUSSIT</i> (TW009)</b>
+          </p>
+          <img
+            id="bussit"
+            style="max-width: 100%; opacity: 1"
+            src="media/bussit.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <div class="quotes">
+            <h4>PROFILE</h4>
+            <p class="quote">
+              “From the area that gave us OneFour comes a new face and sound to
+              carry on the legacy.” - <i>Hau Latukefu</i>
+            </p>
+            <p class="quote">
+              “Forget BC and AD. Time will now be divided into BV and AV, such
+              has been the impact of Vv Pete in the short time since she first
+              landed.” - <i>Triple J</i>
+            </p>
+          </div>
         </div>
 
-        <!-- KOBI SPICE X SEVY --> 
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: black" class="riverName">
-                        <b>KOBI SPICE X SEVY - <i>FIJI WATER</i> (TW007)</b>   
-                    </p>
-                    <div class="half-width">
-                        <img id="kobi" style="max-width: 100%; opacity: 1" src="./media/kobi.jpg"  alt="kobi" loading="lazy">
-                        <img id="sevy" style="max-width: 100%; opacity: 1" src="./media/sevy.jpg"  alt="sevy" loading="lazy">   
-                    </div>    
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="fijiwaterYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/CedQ0FTWEVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-                        </div>
-                        
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1ETF5DEmTGz2pB82XNWWHl?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>            
-                </div>
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="bussitYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RT7mCETGi7c"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
             </div>
-        </div> 
 
-        <!-- TRACKWORK X SYDNEY OPERA HOUSE FOR BARRABUWARI --> 
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: black" class="riverName">
-                        <b>TRACKWORK X SYDNEY OPERA HOUSE FOR BARRABUWARI (2021)</b>   
-                    </p>
-                    
-                    <img id="opera-1" style="max-width: 100%; opacity: 1" src="media/opera-house-1.jpg"  alt="1" loading="lazy">
-                    <p style="color: white" class="img-credit">
-                        Images credit - Marcus Roden & Tamati Smith<br> 
-                    </p>
-                    <img id="opera-2" style="max-width: 100%; opacity: 1" src="media/opera-house-2.jpg"  alt="1" loading="lazy">       
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="tingYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/PDTJikhwubg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="chopitYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VSS_dKCogQc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>            
-                    </div>            
-                </div>
-            </div>
-        </div> 
-
-        <!-- SEVY X BAYANG -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p style="color: white" class="riverName">
-                        <b>SEVY X BAYANG - <i>NOT FROM HERE</i> (TW003)</b>
-                        <br><br>
-                        <i>LYCRA<br>
-                         TING<br>
-                         DOGFIGHT<br>
-                         SUGAR CANE<br>
-                         CHANGE UP<br>
-                        </i>     
-                    </p>
-                    <p style="color: white" class="tracknames">
-                        Lyrics by Sevy and Bayang <br> 
-                        Executive produced by Utility <br>
-                        Recorded at Trackwork Studios <br> 
-                        Mixed by Thomas McAlister<br> 
-                        Mastered by Ryan Schwabe<br>
-                        Cover photography by Lad Street<br> 
-                        Cover design: Thomas McAlister<br> 
-                    </p>
-                    <img id="breezy1" style="max-width: 100%; opacity: 1" src="media/sevy-cover.jpg"  alt="1" loading="lazy">
-                    <img id="breezy2" style="max-width: 100%; opacity: 1" src="media/sevy-back.jpg"  alt="1" loading="lazy">
-                    <img id="breezy3" style="max-width: 100%; opacity: 1" src="media/sevy-single.jpg"  alt="1" loading="lazy">         
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="lycraYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ik_0CPHE75Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="tingofcYoutube"> 
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V8NJw0ZpF2U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="dogfightYoutube">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZCK1TGcx0-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-
-                        <iframe style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=2985270522/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless><a href="https://trackwork.bandcamp.com/album/sevy-x-bayang-notfromhere">Sevy x Bayang - notfromhere by TRACKWORK</a></iframe>
-           
-                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1140077365&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                            <a href="https://soundcloud.com/trackwork" title="TRACKWORK™" target="_blank" style="color: #cccccc; text-decoration: none;">TRACKWORK™</a>
-                             · 
-                            <a href="https://soundcloud.com/trackwork/sets/sevy-x-bayang-notfromhere-unreleased-press-link" title="Sevy x Bayang - notfromhere" target="_blank" style="color: #cccccc; text-decoration: none;">Sevy x Bayang - notfromhere</a>
-                        </div>  
-                        <video class="lazy" autoplay controls muted loop playsinline width="100%" height="auto" poster="media/notfromhere-building-collapse-visualiser-poster.jpg">
-                            <source src="media/notfromhere-building-collapse-visualiser.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>           
-                    </div>            
-                </div>
-            </div>
-        </div>  
-    
-        <!-- SNOEE BADMAN -->
-        <div class="container" >        
-            <div class="row">                      
-                <div class="col-9" >
-                    <p class="riverName">
-                        <b>SNOEE BADMAN - <i>#3BADMAN</i> (TW002)</b>
-                        <br><br>
-                        <i>INTRO<br>
-                         #3ALLMYTEAM<br>
-                         ON THE MAP<br>
-                         NO REMORSE PT.2<br>
-                         SHABBA<br>
-                         SKR SKR<br>
-                         SOLO STEP<br>
-                        </i>
-                    </p>
-                    <p class="tracknames">
-                        Lyrics by Snoee Badman <br> 
-                        Executive produced by Utility <br>
-                        Recorded at Trackwork Studios <br> 
-                        Mixed and mastered by Tom Smith<br> 
-                        Cover design: Thomas McAlister<br>
-                    </p>
-
-                    <img id="badman" style="max-width: 100%; opacity: 0.7" src="media/badman.jpg"  alt="1" loading="lazy">
-                    
-                    <a href="https://www.thesaturdaypaper.com.au/culture/music/2020/11/21/drill-rapper-snoee-badman/160587720010729" target="_blank">
-                        <img id="badmanPaper1" style="max-width: 100%; opacity: 1" src="media/satpaper1.jpg"  alt="1" loading="lazy">
-                        <img id="badmanPaper2" style="max-width: 100%; opacity: 1" src="media/satpaper2.jpg"  alt="1" loading="lazy">
-                    </a>          
-                </div>
-
-                <div class="col-3" >
-                    <div  class="col-12">  
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="allmyteYoutube">   
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KexWHdrBcto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
- 
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="shabbaYoutube">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/LNOLGDlrORU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-           
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="ontheroadYoutube">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kTFYM_9Myok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-  
-                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1323243844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
-                            <a href="http://trackwork.bandcamp.com/album/snoee-badman-3badman">Snoee Badman - #3Badman by Snoee Badman</a>
-                        </iframe>
-           
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container'>
-                            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1053812644&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                                <a href="https://soundcloud.com/trackwork" title="TRACKWORK™" target="_blank" style="color: #cccccc; text-decoration: none;">TRACKWORK™</a>
-                                 · 
-                                <a href="https://soundcloud.com/trackwork/sets/snoee-badman-3badman-unreleased-press-link" title="Snoee Badman — #3Badman" target="_blank" style="color: #cccccc; text-decoration: none;">Snoee Badman — #3Badman</a>
-                            </div>
-                        </div>
-                    </div>            
-                </div>
-            </div>
-        </div>  
-    
-        <!-- T-BREEZY -->
-        <div class="container">
-            <div class="row">
-                <div class="col-9" >
-                    <p class="riverName">
-                        <b>T-BREEZY - <i>2360</i> (TW001)</b>
-                        <br><br>
-                        <i>DEVIL<br>
-                         POSTED<br>
-                         SHOW YOU<br>
-                         ORIGAMI<br>
-                         GANG<br>
-                         INVY (feat. Shaq)<br><br>
-                        </i>
-                    </p>
-                    <p class="tracknames">
-                        Written by T Breezy <br> 
-                        Executive produced by Utility <br>
-                        Recorded at Trackwork Studios <br> 
-                        Mixed by Tom Smith<br> 
-                        Mastered by Harvey O’Sullivan at Studios 301 <br> 
-                        Cover design: Serwah Attafuah<br> 
-                        Cover art photo: Alex Johnstone<br>
-                    </p>
-
-                    <img id="breezy" style="max-width: 100%; opacity: 0.7" src="media/tb-promo-shot.jpg"  alt="1" loading="lazy">          
-                </div>
- 
-                <div class="col-3" >
-                    <div  class="col-12">
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="origamiYoutube">   
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/q1A7rYzLOEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-           
-                        <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 99%; height: 100%; }</style>
-                        <div class='embed-container' id="postedYoutube">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/XI4Qw4kmF2w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                        </div>
-           
-                        <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=731513888/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless>
-                            <a href="http://trackwork.bandcamp.com/album/t-breezy-2360">T Breezy - 2360 by T Breezy</a>
-                        </iframe>
-           
-                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/934444588&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                    </div>            
-                </div>
-            </div>
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/2rniJeDskk1s6xOcfio3RV?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
-    
-        <footer>
-            <img id="footer-logo" src="/trackwork_newlogo.png"> 
-        </footer>
+      </div>
+    </div>
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById("modal");
-            var btn = document.getElementById("myBtn");
-            var span = document.getElementsByClassName("close")[0];
+    <!-- PARRA NIGHTS -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: white" class="riverName">
+            <b>TRACKWORK X PARRA NIGHTS (2022)</b>
+          </p>
 
-            // Few seconds after page loads first time, open the modal
-            openPopUp = function() {
-                modal.style.display = "block";
-            }
-            var t = setTimeout(openPopUp, 5000);
+          <div class="half-width">
+            <img
+              id="parranights-1"
+              style="max-width: 100%; opacity: 1"
+              src="media/parra-1.jpg"
+              alt="1"
+              loading="lazy"
+            />
+            <img
+              id="parranights-2"
+              style="max-width: 100%; opacity: 1"
+              src="media/parra-2.jpg"
+              alt="1"
+              loading="lazy"
+            />
+          </div>
+          <p style="color: white" class="img-credit">
+            Images credit - Ladstreet<br />
+          </p>
+          <div class="half-width">
+            <img
+              id="parranights-3"
+              style="max-width: 100%; opacity: 1"
+              src="media/parra-3.jpg"
+              alt="1"
+              loading="lazy"
+            />
+            <img
+              id="parranights-4"
+              style="max-width: 100%; opacity: 1"
+              src="media/parra-4.jpg"
+              alt="1"
+              loading="lazy"
+            />
+          </div>
+        </div>
 
-            // When the user clicks on the button, open the modal
-            btn.onclick = function() {
-            modal.style.display = "block";
-            }
+        <div class="col-3">
+          <div class="col-12"></div>
+        </div>
+      </div>
+    </div>
 
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-            modal.style.display = "none";
-            }
+    <!-- TRACKWORK MIXWORK MIX SERIES -->
+    <div class="container mixwork">
+      <div class="row">
+        <div class="col-9">
+          <div class="thirds mixwork-gallery">
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-001-tmorimoto"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/mixwork01.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-002-crazymike3ndles5-160921"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 1px 0px"
+                src="media/mixwork02.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-003-serwah-attafuah-211021"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 0px 1px 0px"
+                src="media/mixwork03.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-004-sevy-101221"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px"
+                src="media/mixwork04.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-005-rydeen-10222"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px"
+                src="media/mixwork05.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
 
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-            }
-        </script> 
-    </body>   
+            <a
+              href="https://soundcloud.com/trackwork/club-service-mixwork-poison?in=trackwork/sets/mixwork-1"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px"
+                src="media/mixwork006.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-007-cassius-select?in=trackwork/sets/mixwork-1"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px"
+                src="media/mixwork007.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-008-serwah-attafuah-14324?in=trackwork/sets/mixwork-1"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px"
+                src="media/mixwork008.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://soundcloud.com/trackwork/mixwork-009-bayang?in=trackwork/sets/mixwork-1"
+              target="_blank"
+            >
+              <img
+                id="mixwork"
+                style="max-width: 100%; opacity: 1; margin: 0px 1px 0px 0px"
+                src="media/mixwork009.jpg"
+                alt="1"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <p style="color: black" class="img-credit">
+            <b>TRACKWORK MIXWORK MIX SERIES (2021-PRESENT)</b>
+          </p>
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <iframe
+              width="100%"
+              height="450"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1552971145&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+            ></iframe>
+            <div
+              style="
+                font-size: 10px;
+                color: #cccccc;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              "
+            >
+              <a
+                href="https://soundcloud.com/trackwork"
+                title="TRACKWORK™"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >TRACKWORK™</a
+              >
+              ·
+              <a
+                href="https://soundcloud.com/trackwork/sets/mixwork-1"
+                title="MIXWORK"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >MIXWORK</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NTS X LORAINE JAMES GUEST MIX -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: white" class="riverName">
+            <b>NTS X LORAINE JAMES GUEST MIX (2022)</b>
+          </p>
+          <a
+            href="https://www.nts.live/shows/loraine-james/episodes/loraine-james-17th-february-2022"
+            target="_blank"
+          >
+            <img
+              id="nts-mix"
+              style="max-width: 100%; opacity: 1"
+              src="media/nts-mix.jpg"
+              alt="nts-mix"
+              loading="lazy"
+            />
+          </a>
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/0SrLwIX8UMrmeL7RemB05N?utm_source=generator"
+              width="100%"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+
+            <iframe
+              width="100%"
+              height="120"
+              src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FCashmereRadio%2Fcashmere-specials-trackwork-frauds-with-vv-pete-utility-25112022%2F"
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WALKERBOY -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: white" class="riverName">
+            <b>WALKERBOY - <i>ON A ROLL</i> (TW008)</b>
+          </p>
+          <img
+            id="walkerboy"
+            style="max-width: 100%; opacity: 1"
+            src="media/walkerboy.jpg"
+            alt="1"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="onarollYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/izvwwYKzylA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/0c3tgxRUF9YZDYfYCyClJo?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KOBI SPICE X SEVY -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: black" class="riverName">
+            <b>KOBI SPICE X SEVY - <i>FIJI WATER</i> (TW007)</b>
+          </p>
+          <div class="half-width">
+            <img
+              id="kobi"
+              style="max-width: 100%; opacity: 1"
+              src="./media/kobi.jpg"
+              alt="kobi"
+              loading="lazy"
+            />
+            <img
+              id="sevy"
+              style="max-width: 100%; opacity: 1"
+              src="./media/sevy.jpg"
+              alt="sevy"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="fijiwaterYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/CedQ0FTWEVI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/1ETF5DEmTGz2pB82XNWWHl?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRACKWORK X SYDNEY OPERA HOUSE FOR BARRABUWARI -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: black" class="riverName">
+            <b>TRACKWORK X SYDNEY OPERA HOUSE FOR BARRABUWARI (2021)</b>
+          </p>
+
+          <img
+            id="opera-1"
+            style="max-width: 100%; opacity: 1"
+            src="media/opera-house-1.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <p style="color: white" class="img-credit">
+            Images credit - Marcus Roden & Tamati Smith<br />
+          </p>
+          <img
+            id="opera-2"
+            style="max-width: 100%; opacity: 1"
+            src="media/opera-house-2.jpg"
+            alt="1"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="tingYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/PDTJikhwubg"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="chopitYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/VSS_dKCogQc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEVY X BAYANG -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p style="color: white" class="riverName">
+            <b>SEVY X BAYANG - <i>NOT FROM HERE</i> (TW003)</b>
+            <br /><br />
+            <i
+              >LYCRA<br />
+              TING<br />
+              DOGFIGHT<br />
+              SUGAR CANE<br />
+              CHANGE UP<br />
+            </i>
+          </p>
+          <p style="color: white" class="tracknames">
+            Lyrics by Sevy and Bayang <br />
+            Executive produced by Utility <br />
+            Recorded at Trackwork Studios <br />
+            Mixed by Thomas McAlister<br />
+            Mastered by Ryan Schwabe<br />
+            Cover photography by Lad Street<br />
+            Cover design: Thomas McAlister<br />
+          </p>
+          <img
+            id="breezy1"
+            style="max-width: 100%; opacity: 1"
+            src="media/sevy-cover.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <img
+            id="breezy2"
+            style="max-width: 100%; opacity: 1"
+            src="media/sevy-back.jpg"
+            alt="1"
+            loading="lazy"
+          />
+          <img
+            id="breezy3"
+            style="max-width: 100%; opacity: 1"
+            src="media/sevy-single.jpg"
+            alt="1"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="lycraYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Ik_0CPHE75Y"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="tingofcYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/V8NJw0ZpF2U"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="dogfightYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ZCK1TGcx0-s"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <iframe
+              style="border: 0; width: 100%; height: 307px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=2985270522/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+              seamless
+              ><a
+                href="https://trackwork.bandcamp.com/album/sevy-x-bayang-notfromhere"
+                >Sevy x Bayang - notfromhere by TRACKWORK</a
+              ></iframe
+            >
+
+            <iframe
+              width="100%"
+              height="300"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1140077365&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <div
+              style="
+                font-size: 10px;
+                color: #cccccc;
+                line-break: anywhere;
+                word-break: normal;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                  Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                font-weight: 100;
+              "
+            >
+              <a
+                href="https://soundcloud.com/trackwork"
+                title="TRACKWORK™"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >TRACKWORK™</a
+              >
+              ·
+              <a
+                href="https://soundcloud.com/trackwork/sets/sevy-x-bayang-notfromhere-unreleased-press-link"
+                title="Sevy x Bayang - notfromhere"
+                target="_blank"
+                style="color: #cccccc; text-decoration: none"
+                >Sevy x Bayang - notfromhere</a
+              >
+            </div>
+            <video
+              class="lazy"
+              autoplay
+              controls
+              muted
+              loop
+              playsinline
+              width="100%"
+              height="auto"
+              poster="media/notfromhere-building-collapse-visualiser-poster.jpg"
+            >
+              <source
+                src="media/notfromhere-building-collapse-visualiser.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SNOEE BADMAN -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p class="riverName">
+            <b>SNOEE BADMAN - <i>#3BADMAN</i> (TW002)</b>
+            <br /><br />
+            <i
+              >INTRO<br />
+              #3ALLMYTEAM<br />
+              ON THE MAP<br />
+              NO REMORSE PT.2<br />
+              SHABBA<br />
+              SKR SKR<br />
+              SOLO STEP<br />
+            </i>
+          </p>
+          <p class="tracknames">
+            Lyrics by Snoee Badman <br />
+            Executive produced by Utility <br />
+            Recorded at Trackwork Studios <br />
+            Mixed and mastered by Tom Smith<br />
+            Cover design: Thomas McAlister<br />
+          </p>
+
+          <img
+            id="badman"
+            style="max-width: 100%; opacity: 0.7"
+            src="media/badman.jpg"
+            alt="1"
+            loading="lazy"
+          />
+
+          <a
+            href="https://www.thesaturdaypaper.com.au/culture/music/2020/11/21/drill-rapper-snoee-badman/160587720010729"
+            target="_blank"
+          >
+            <img
+              id="badmanPaper1"
+              style="max-width: 100%; opacity: 1"
+              src="media/satpaper1.jpg"
+              alt="1"
+              loading="lazy"
+            />
+            <img
+              id="badmanPaper2"
+              style="max-width: 100%; opacity: 1"
+              src="media/satpaper2.jpg"
+              alt="1"
+              loading="lazy"
+            />
+          </a>
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="allmyteYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/KexWHdrBcto"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="shabbaYoutube">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/LNOLGDlrORU"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="ontheroadYoutube">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/kTFYM_9Myok"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <iframe
+              style="border: 0; width: 100%; height: 120px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=1323243844/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+              seamless
+            >
+              <a href="http://trackwork.bandcamp.com/album/snoee-badman-3badman"
+                >Snoee Badman - #3Badman by Snoee Badman</a
+              >
+            </iframe>
+
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container">
+              <iframe
+                width="100%"
+                height="300"
+                scrolling="no"
+                frameborder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1053812644&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <div
+                style="
+                  font-size: 10px;
+                  color: #cccccc;
+                  line-break: anywhere;
+                  word-break: normal;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+                    Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+                  font-weight: 100;
+                "
+              >
+                <a
+                  href="https://soundcloud.com/trackwork"
+                  title="TRACKWORK™"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                  >TRACKWORK™</a
+                >
+                ·
+                <a
+                  href="https://soundcloud.com/trackwork/sets/snoee-badman-3badman-unreleased-press-link"
+                  title="Snoee Badman — #3Badman"
+                  target="_blank"
+                  style="color: #cccccc; text-decoration: none"
+                  >Snoee Badman — #3Badman</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- T-BREEZY -->
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <p class="riverName">
+            <b>T-BREEZY - <i>2360</i> (TW001)</b>
+            <br /><br />
+            <i
+              >DEVIL<br />
+              POSTED<br />
+              SHOW YOU<br />
+              ORIGAMI<br />
+              GANG<br />
+              INVY (feat. Shaq)<br /><br />
+            </i>
+          </p>
+          <p class="tracknames">
+            Written by T Breezy <br />
+            Executive produced by Utility <br />
+            Recorded at Trackwork Studios <br />
+            Mixed by Tom Smith<br />
+            Mastered by Harvey O’Sullivan at Studios 301 <br />
+            Cover design: Serwah Attafuah<br />
+            Cover art photo: Alex Johnstone<br />
+          </p>
+
+          <img
+            id="breezy"
+            style="max-width: 100%; opacity: 0.7"
+            src="media/tb-promo-shot.jpg"
+            alt="1"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="col-3">
+          <div class="col-12">
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="origamiYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/q1A7rYzLOEA"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <style>
+              .embed-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                height: auto;
+              }
+              .embed-container iframe,
+              .embed-container object,
+              .embed-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 99%;
+                height: 100%;
+              }
+            </style>
+            <div class="embed-container" id="postedYoutube">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/XI4Qw4kmF2w"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <iframe
+              style="border: 0; width: 100%; height: 120px"
+              src="https://bandcamp.com/EmbeddedPlayer/album=731513888/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+              seamless
+            >
+              <a href="http://trackwork.bandcamp.com/album/t-breezy-2360"
+                >T Breezy - 2360 by T Breezy</a
+              >
+            </iframe>
+
+            <iframe
+              width="100%"
+              height="300"
+              scrolling="no"
+              frameborder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/934444588&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img id="footer-logo" src="/trackwork_newlogo.png" />
+    </footer>
+
+    <script>
+      var modal = document.getElementById('modal')
+      var btn = document.getElementById('myBtn')
+      var span = document.getElementsByClassName('close')[0]
+
+      // Function to show the modal with a transition
+      function openPopUp() {
+        modal.classList.add('show')
+      }
+
+      // Show the modal after 5 seconds
+      var t = setTimeout(openPopUp, 5000)
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        openPopUp()
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.classList.remove('show')
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.classList.remove('show')
+        }
+      }
+    </script>
+  </body>
 </html>
